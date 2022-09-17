@@ -11,5 +11,7 @@ namespace Prez.Work.Trainings.Vega.Api.Persistence
 
         // https://learn.microsoft.com/en-us/ef/core/miscellaneous/nullable-reference-types
         public DbSet<Make> Makes => Set<Make>();
+
+        public DbSet<Feature> Features => Set<Feature>();
     }
 }
