@@ -11,7 +11,7 @@ using Prez.Work.Trainings.Vega.Api.Persistence;
 namespace Prez.Work.Trainings.Vega.Api.Migrations
 {
     [DbContext(typeof(VegaDbContext))]
-    [Migration("20220917153944_Initial")]
+    [Migration("20220917155222_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -51,6 +51,11 @@ namespace Prez.Work.Trainings.Vega.Api.Migrations
 
                     b.Property<int>("MakeId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.HasKey("Id");
 

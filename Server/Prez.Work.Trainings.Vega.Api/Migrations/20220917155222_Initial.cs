@@ -27,6 +27,7 @@ namespace Prez.Work.Trainings.Vega.Api.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     MakeId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

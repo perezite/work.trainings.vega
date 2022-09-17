@@ -50,6 +50,11 @@ namespace Prez.Work.Trainings.Vega.Api.Migrations
                     b.Property<int>("MakeId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("MakeId");
