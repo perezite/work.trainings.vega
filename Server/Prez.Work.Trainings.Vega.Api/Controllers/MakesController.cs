@@ -22,7 +22,6 @@ namespace Prez.Work.Trainings.Vega.Api.Controllers
         public async Task<IEnumerable<MakeResource>> GetMakes()
         {
             var makes = await context.Makes.Include(m => m.Models).ToListAsync();
-
             return mapper.Map<List<Make>, List<MakeResource>>(makes);
         }
     }

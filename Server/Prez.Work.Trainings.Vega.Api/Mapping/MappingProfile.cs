@@ -10,6 +10,7 @@ namespace Prez.Work.Trainings.Vega.Api.Mapping
         {
             CreateMap<Make, MakeResource>();
             CreateMap<Model, ModelResource>();
+            CreateMap<Feature, FeatureResource>();
         }
     }
 }
