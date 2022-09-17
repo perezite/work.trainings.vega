@@ -10,3 +10,9 @@ The Vega Car-Dealer App by Mosh Hamedani. Refurbished for .NET 6, Angular 14 and
 - Update database to last migration: `dotnet ef database update`
 - Update/downgrade database to specific migration: `dotnet ef databse update SomeMigration` 
 - Downgrade all migrations: `dotnet ef database update 0`
+
+# Links
+- [Setup Bootstrap 5 in Angular](https://stackoverflow.com/questions/68081166/bootstrap-5-in-angular-application)
+
+# My current position in tutorial
+35. Creating a route
