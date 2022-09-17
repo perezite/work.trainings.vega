@@ -5,7 +5,7 @@ The Vega Car-Dealer App by Mosh Hamedani. Refurbished for .NET 6, Angular 14 and
 - Install [Dotnet CLI Tools for Entity Framework](https://learn.microsoft.com/en-us/ef/core/cli/dotnet): `dotnet tool install --global dotnet-ef`
 
 # Entity Framework Migration Commands
-- Add a migration: `dotnet ef migrations add SomeMigration`
+- Add migration: `dotnet ef migrations add SomeMigration`
 - Remove last migration: `dotnet ef migrations remove`
 - Update database to last migration: `dotnet ef database update`
 - Update/downgrade database to specific migration: `dotnet ef databse update SomeMigration` 
