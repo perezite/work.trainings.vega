@@ -13,6 +13,7 @@ The Vega Car-Dealer App by Mosh Hamedani. Refurbished for .NET 6, Angular 14 and
 
 # Links
 - [Setup Bootstrap 5 in Angular](https://stackoverflow.com/questions/68081166/bootstrap-5-in-angular-application)
+- [Full Page Image HTML Background for Bootstrap](https://startbootstrap.com/snippets/full-image-background)
 
 # My current position in tutorial
 36. Using Bootstrap Forms
