@@ -22,7 +22,7 @@ export class VehicleFormComponent implements OnInit {
 
   onMakeChange() {
     console.log("Vehicle: ", this.vehicle);
-    let selectedMake = this.makes.find(m => m.id == this.vehicle.make);
+    let selectedMake = this.makes.find(m => m.id == this.vehicle.makeId);
     this.models = selectedMake ? selectedMake.models : [];
   }
 }
