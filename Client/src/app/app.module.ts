@@ -7,6 +7,7 @@ import { VehicleFormComponent } from './components/vehicle-form/vehicle-form.com
 import { NavigationComponent } from './components/app/navigation/navigation.component';
 import { MakeService } from './services/make.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     MakeService
