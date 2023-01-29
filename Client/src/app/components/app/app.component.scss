@@ -1,25 +1,19 @@
-:root {
-  --main-bg-color: #009d63;
-  --main-text-color: #009d63;
-  --main-text-hover-color: #009d63d2;
-  --second-text-color: #bbbec5;
-  --second-bg-color: #c1efde;
-}
+$main-bg-color: #009d63;
+$main-text-color: #009d63;
+$main-text-hover-color: #009d63d2;
+$second-text-color: #bbbec5;
+$second-bg-color: #c1efde;
 
 .primary-text {
-  color: var(--main-text-color);
-}
-
-.second-text {
-  color: var(--second-text-color);
+  color: $main-text-color;
 }
 
 .primary-bg {
-  background-color: var(--main-bg-color);
+  background-color: $main-bg-color;
 }
 
 .secondary-bg {
-  background-color: var(--second-bg-color);
+  background-color: $second-bg-color;
 }
 
 .rounded-full {
@@ -74,21 +68,17 @@
   border: none;
   margin: .6rem 1.4rem;
   padding: 0;
-  transition: text-shadow .5s;
+  transition: text-shadow 1s;
 }
 
 .list-group-item.my-active {
-  color: var(--main-text-color);
+  color: $main-text-color;
   font-weight: bold;
 }
 
-.my-active {
-  color: green;
-}
-
 .list-group-item:hover {
-  color: var(--main-text-hover-color);
-  text-shadow: var(--main-text-hover-color) 0 0 27px;
+  color: $main-text-hover-color;
+  text-shadow: $main-text-hover-color 0 0 25px;
 }
 
 @media (min-width: 768px) {
