@@ -7,11 +7,15 @@ import { VehicleFormComponent } from './components/vehicle-form/vehicle-form.com
 import { MakeService } from './services/make.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SandboxComponent } from './components/sandbox/sandbox.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VehicleFormComponent,
+    NavbarComponent,
+    SandboxComponent,
   ],
   imports: [
     BrowserModule,
