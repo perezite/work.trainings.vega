@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SandboxComponent } from './components/sandbox/sandbox.component';
+import { NavbarDemoComponent } from './components/demos/navbar-demo/navbar-demo.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SandboxComponent } from './components/sandbox/sandbox.component';
     VehicleFormComponent,
     NavbarComponent,
     SandboxComponent,
+    NavbarDemoComponent,
   ],
   imports: [
     BrowserModule,
