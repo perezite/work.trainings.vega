@@ -6,14 +6,14 @@ import { VehicleFormComponent } from './vehicles/vehicle-form.component';
 import { MakeService } from './vehicles/make.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { NavbarComponent } from './shared/layout/navbar/navbar.component';
+import { NavbarComponent } from './shared/shell/navbar/navbar.component';
 import { SandboxComponent } from './sandbox/sandbox.component';
-import { NavbarDemoComponent } from './shared/layout/navbar/demo/navbar-demo.component';
-import { SidebarComponent } from './shared/layout/sidebar/sidebar.component';
+import { NavbarDemoComponent } from './shared/shell/navbar/demo/navbar-demo.component';
+import { SidebarComponent } from './shared/shell/sidebar/sidebar.component';
 import { IconsModule } from './shared/icons/icons.module';
-import { SidebarDemoComponent } from './shared/layout/sidebar/demo/sidebar-demo.component';
+import { SidebarDemoComponent } from './shared/shell/sidebar/demo/sidebar-demo.component';
 import { AppComponent } from './app.component';
-import { ShellComponent } from './shared/layout/shell/shell.component';
+import { ShellComponent } from './shared/shell/shell.component';
 
 @NgModule({
   declarations: [
