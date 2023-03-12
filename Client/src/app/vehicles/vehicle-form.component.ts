@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MakeService } from 'src/app/services/make.service';
+import { MakeService } from 'src/app/vehicles/make.service';
 
 @Component({
   selector: 'app-vehicle-form',
