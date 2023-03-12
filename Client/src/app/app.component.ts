@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationStart, Event as NavigationEvent, ActivatedRoute, Navigation, ActivationEnd } from '@angular/router';
-import { filter } from 'rxjs';
+import { Router, Event as NavigationEvent, ActivatedRoute, Navigation, ActivationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',

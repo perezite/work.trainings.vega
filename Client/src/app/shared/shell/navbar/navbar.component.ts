@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { ShellService } from '../shell.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,11 +7,12 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  constructor() { }
+  constructor(private shellService: ShellService) { }
 
   ngOnInit(): void {
   }
 
-  toggleNavbar() {
+  toggleSidebar() {
+    this.shellService.toggleSidebar();
   }
 }
