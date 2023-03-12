@@ -1,7 +1,6 @@
 .sidebar {
   position: fixed;
-  width: 16rem;
-  width: 4rem;
+  width: var(--sidebar-width);
   height: 100vh;
   border-right: 1px solid rgb(225, 225, 225);
   background-color: white;
@@ -10,7 +9,7 @@
 }
 
 .expanded {
-  width: 16rem;
+  width: var(--sidebar-width-expanded);
 }
 
 .expanded .sidebar-brand {
@@ -27,9 +26,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4rem;
-  min-width: 4rem;
-  height: 4rem;
+  width: var(--sidebar-width);
+  min-width: var(--sidebar-width);
+  height: var(--sidebar-width);
 }
 
 .sidebar-logo {
@@ -77,9 +76,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4rem;
-  min-width: 4rem;
-  height: calc(4rem - 0.5rem);
+  width: var(--sidebar-width);
+  min-width: var(--sidebar-width);
+  height: calc(var(--sidebar-width) - 0.5rem);
   font-size: 1.7rem;
   padding-bottom: 3px;
 }
@@ -100,7 +99,7 @@
 /* non-mobile screens */
 @media screen and (min-width: 576px) {
   .sidebar:hover {
-      width: 16rem;
+      width: var(--sidebar-width-expanded);
   }
 
   .sidebar:hover .sidebar-brand {
