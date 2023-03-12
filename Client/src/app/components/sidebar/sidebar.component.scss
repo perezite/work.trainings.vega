@@ -50,17 +50,13 @@
   display: block;
   margin-left: auto;
   margin-right: 1rem;
-  color: lightgray;
+  color: grey;
   text-decoration: none;
 }
 
 .sidebar-closer-icon {
-  transform: rotate(-90deg);
-  padding: 0;
-  font-size: 20px;
-  margin-top: 3px;
-  margin-right: 2px;
-  color: grey;
+  width: 1.5rem;
+  padding-top: 1.5px;
 }
 
 .sidebar-menu {
