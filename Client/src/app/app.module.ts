@@ -9,10 +9,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './shared/layout/navbar/navbar.component';
 import { SandboxComponent } from './components/sandbox/sandbox.component';
-import { NavbarDemoComponent } from './components/demos/navbar-demo/navbar-demo.component';
+import { NavbarDemoComponent } from './demos/navbar-demo/navbar-demo.component';
 import { SidebarComponent } from './shared/layout/sidebar/sidebar.component';
-import { SidebarDemoComponent } from './components/demos/sidebar-demo/sidebar-demo.component';
 import { IconsModule } from './shared/icons/icons.module';
+import { SidebarDemoComponent } from './demos/sidebar-demo/sidebar-demo.component';
 
 @NgModule({
   declarations: [
