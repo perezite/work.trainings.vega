@@ -11,6 +11,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SandboxComponent } from './components/sandbox/sandbox.component';
 import { NavbarDemoComponent } from './components/demos/navbar-demo/navbar-demo.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { SidebarDemoComponent } from './components/demos/sidebar-demo/sidebar-demo.component';
+import { IconsModule } from './icons/icons.module';
 
 @NgModule({
   declarations: [
@@ -19,13 +21,15 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     NavbarComponent,
     SandboxComponent,
     NavbarDemoComponent,
-    SidebarComponent
+    SidebarComponent,
+    SidebarDemoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    IconsModule
   ],
   providers: [
     MakeService
