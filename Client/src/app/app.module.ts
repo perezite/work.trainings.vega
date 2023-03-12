@@ -13,6 +13,7 @@ import { SidebarComponent } from './shared/layout/sidebar/sidebar.component';
 import { IconsModule } from './shared/icons/icons.module';
 import { SidebarDemoComponent } from './shared/layout/sidebar/demo/sidebar-demo.component';
 import { AppComponent } from './app.component';
+import { ShellComponent } from './shared/layout/shell/shell.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AppComponent } from './app.component';
     SandboxComponent,
     NavbarDemoComponent,
     SidebarComponent,
-    SidebarDemoComponent
+    SidebarDemoComponent,
+    ShellComponent
   ],
   imports: [
     BrowserModule,
