@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarDemoComponent } from './demos/navbar-demo/navbar-demo.component';
-import { SandboxComponent } from './components/sandbox/sandbox.component';
+import { SandboxComponent } from './sandbox/sandbox.component';
 import { SidebarDemoComponent } from './demos/sidebar-demo/sidebar-demo.component';
 
 const routes: Routes = [

@@ -8,7 +8,7 @@ import { MakeService } from './services/make.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './shared/layout/navbar/navbar.component';
-import { SandboxComponent } from './components/sandbox/sandbox.component';
+import { SandboxComponent } from './sandbox/sandbox.component';
 import { NavbarDemoComponent } from './demos/navbar-demo/navbar-demo.component';
 import { SidebarComponent } from './shared/layout/sidebar/sidebar.component';
 import { IconsModule } from './shared/icons/icons.module';

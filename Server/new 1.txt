@@ -1,0 +1,14 @@
+app
+	shared
+		components
+			card
+		layout
+			sidebar
+			navbar
+		icons
+	sandbox
+	dashboard
+	vehicles
+	app-component.html
+	app-component.ts
+	app-component.scss
