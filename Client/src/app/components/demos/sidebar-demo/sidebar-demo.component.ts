@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar-demo.component.scss']
 })
 export class SidebarDemoComponent implements OnInit {
+  sidebarExpanded: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleSidebarExpansion() {
+    this.sidebarExpanded = !this.sidebarExpanded;
   }
 
 }
