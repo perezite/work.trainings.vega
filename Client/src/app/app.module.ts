@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SandboxComponent } from './components/sandbox/sandbox.component';
 import { NavbarDemoComponent } from './components/demos/navbar-demo/navbar-demo.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { NavbarDemoComponent } from './components/demos/navbar-demo/navbar-demo.
     NavbarComponent,
     SandboxComponent,
     NavbarDemoComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
