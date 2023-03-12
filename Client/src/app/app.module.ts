@@ -7,12 +7,12 @@ import { VehicleFormComponent } from './components/vehicle-form/vehicle-form.com
 import { MakeService } from './services/make.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { NavbarComponent } from './shared/layout/navbar/navbar.component';
 import { SandboxComponent } from './components/sandbox/sandbox.component';
 import { NavbarDemoComponent } from './components/demos/navbar-demo/navbar-demo.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { SidebarComponent } from './shared/layout/sidebar/sidebar.component';
 import { SidebarDemoComponent } from './components/demos/sidebar-demo/sidebar-demo.component';
-import { IconsModule } from './icons/icons.module';
+import { IconsModule } from './shared/icons/icons.module';
 
 @NgModule({
   declarations: [
