@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NavbarDemoComponent } from './demos/navbar-demo/navbar-demo.component';
+import { NavbarDemoComponent } from './shared/layout/navbar/navbar-demo/navbar-demo.component';
 import { SandboxComponent } from './sandbox/sandbox.component';
-import { SidebarDemoComponent } from './demos/sidebar-demo/sidebar-demo.component';
+import { SidebarDemoComponent } from './shared/layout/sidebar/sidebar-demo/sidebar-demo.component';
 
 const routes: Routes = [
   { path: 'navbar-demo', component: NavbarDemoComponent, data: { fullscreen: 'true' } },
