@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './components/app/app.component';
 import { VehicleFormComponent } from './vehicles/vehicle-form.component';
 import { MakeService } from './services/make.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -13,6 +12,7 @@ import { NavbarDemoComponent } from './shared/layout/navbar/navbar-demo/navbar-d
 import { SidebarComponent } from './shared/layout/sidebar/sidebar.component';
 import { IconsModule } from './shared/icons/icons.module';
 import { SidebarDemoComponent } from './shared/layout/sidebar/sidebar-demo/sidebar-demo.component';
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
