@@ -6,70 +6,14 @@
     </div>
 </div> -->
 
-<!-- <div class="sidebar"></div> -->
 <div class="shell">
-  <div class="sidebar">Test</div>
+  <!-- <div class="sidebar"></div> -->
+  <app-sidebar [(expanded)]="sidebarExpanded"></app-sidebar>
   <div class="shell-right">
     <div class="navbar"></div>
     <div class="content">
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
-      Test<br>
+      <button (click)="toggleSidebar()">toggle sidebar</button>
+      <ng-content></ng-content>
     </div>
   </div>
 </div>

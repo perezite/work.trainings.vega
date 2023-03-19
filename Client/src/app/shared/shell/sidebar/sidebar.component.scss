@@ -1,5 +1,4 @@
 .sidebar {
-  position: fixed;
   width: var(--sidebar-width);
   height: 100vh;
   border-right: 1px solid rgb(225, 225, 225);
@@ -90,7 +89,7 @@
 }
 
 .sidebar-toggle {
-  position: fixed;
+  // position: fixed;
   font-size: 20px;
   left: 18rem;
   top: 1.4rem;

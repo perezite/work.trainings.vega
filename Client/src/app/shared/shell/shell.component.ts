@@ -5,26 +5,26 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './shell.component.html',
   styleUrls: ['./shell.component.scss']
 })
-export class ShellComponent implements OnInit {
+export class ShellComponent {
   sidebarExpanded = false;
 
-  ngOnInit(): void {
-    if(!this.isMobile())
-      this.sidebarExpanded = true;
-  }
+  // ngOnInit(): void {
+  //   if(!this.isMobile())
+  //     this.sidebarExpanded = true;
+  // }
 
-  expandSidebar() {
+  toggleSidebar() {
     this.sidebarExpanded = !this.sidebarExpanded;
   }
 
-  closeMobileSidebar() {
-    if (this.isMobile()) {
-      this.sidebarExpanded = false;
-    }
-  }
+  // closeMobileSidebar() {
+  //   if (this.isMobile()) {
+  //     this.sidebarExpanded = false;
+  //   }
+  // }
 
-  private isMobile() : boolean {
-    const isMobile = window.matchMedia("screen and (max-width: 576px)").matches;
-    return isMobile;
-  }
+  // private isMobile() : boolean {
+  //   const isMobile = window.matchMedia("screen and (max-width: 576px)").matches;
+  //   return isMobile;
+  // }
 }

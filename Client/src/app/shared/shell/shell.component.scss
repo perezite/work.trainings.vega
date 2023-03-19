@@ -36,9 +36,17 @@
 .sidebar {
   position: sticky;
   top: 0;
+  z-index: 999;
   width: 4rem;
   height: 100vh;
   background-color: red;
+}
+
+app-sidebar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 100vh;
 }
 
 .shell-right {
