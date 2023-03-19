@@ -1,5 +1,5 @@
 <app-sidebar class="sidebar" [(expanded)]="sidebarExpanded"></app-sidebar>
-<div class="page-right">
+<div class="shell-right" [ngClass]="{'shell-right-expanded': sidebarExpanded}">
   <app-navbar (toggleClick)="expandSidebar($event)"></app-navbar>
   <div class="content">
     <ng-content></ng-content>
