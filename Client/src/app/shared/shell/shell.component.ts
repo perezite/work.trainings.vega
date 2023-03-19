@@ -9,14 +9,22 @@ export class ShellComponent implements OnInit {
   sidebarExpanded = false;
 
   ngOnInit(): void {
-    const isMobile = window.matchMedia("screen and (max-width: 576px)").matches;
-    if(!isMobile)
+    if(!this.isMobile())
       this.sidebarExpanded = true;
   }
 
-  expandSidebar(expand: boolean) {
+  expandSidebar() {
     this.sidebarExpanded = !this.sidebarExpanded;
   }
 
+  closeMobileSidebar() {
+    if (this.isMobile()) {
+      this.sidebarExpanded = false;
+    }
+  }
 
+  private isMobile() : boolean {
+    const isMobile = window.matchMedia("screen and (max-width: 576px)").matches;
+    return isMobile;
+  }
 }

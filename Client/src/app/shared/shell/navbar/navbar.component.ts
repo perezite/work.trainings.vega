@@ -6,18 +6,13 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-private isToggled = false;
-
-  @Output() toggleClick = new EventEmitter<boolean>();
-  @Output() newItemEvent = new EventEmitter<string>();
+  @Output() toggleClick = new EventEmitter<void>();
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   toggle() {
-    this.isToggled = !this.isToggled;
-    this.toggleClick.emit(this.isToggled);
+    this.toggleClick.emit();
   }
 }

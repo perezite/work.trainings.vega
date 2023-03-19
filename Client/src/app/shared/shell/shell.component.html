@@ -1,7 +1,75 @@
-<app-sidebar class="sidebar" [(expanded)]="sidebarExpanded"></app-sidebar>
-<div class="shell-right" [ngClass]="{'shell-right-expanded': sidebarExpanded}">
-  <app-navbar (toggleClick)="expandSidebar($event)"></app-navbar>
-  <div class="content">
-    <ng-content></ng-content>
+<!-- <app-sidebar [(expanded)]="sidebarExpanded" class="sidebar"></app-sidebar>
+<div [ngClass]="{'shell-right-expanded': sidebarExpanded}" class="shell-right">
+  <app-navbar (toggleClick)="expandSidebar()" [ngClass]="{'navbar-expanded': sidebarExpanded}" class="navbar"></app-navbar>
+    <div (click)="closeMobileSidebar()" class="content">
+      <ng-content></ng-content>
+    </div>
+</div> -->
+
+<!-- <div class="sidebar"></div> -->
+<div class="shell">
+  <div class="sidebar">Test</div>
+  <div class="shell-right">
+    <div class="navbar"></div>
+    <div class="my-content">
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+      Test<br>
+    </div>
   </div>
 </div>
