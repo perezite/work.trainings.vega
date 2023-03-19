@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 
 import { TablerIconsModule } from 'angular-tabler-icons';
 import { IconCamera, IconHeart, IconBrandGithub, IconDashboard, IconCar, IconCircleArrowLeft, IconMenu2,
-         IconReportAnalytics } from 'angular-tabler-icons/icons';
+         IconReportAnalytics, IconFlame, IconDeviceDesktopAnalytics, IconSquareX } from 'angular-tabler-icons/icons';
 
 // Select some icons (use an object, not an array)
 const icons = {
@@ -13,7 +13,10 @@ const icons = {
   IconCar,
   IconCircleArrowLeft,
   IconMenu2,
-  IconReportAnalytics
+  IconReportAnalytics,
+  IconFlame,
+  IconDeviceDesktopAnalytics,
+  IconSquareX
 };
 
 @NgModule({

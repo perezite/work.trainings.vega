@@ -2,8 +2,8 @@
     <div class="my-card-body">
       <p class="my-card-title">{{ title }}</p>
       <div class="my-card-content">
-        <i-tabler name="report-analytics" class="my-card-icon green"></i-tabler>
-        <p class="my-card-pill green background-light-green">+10%</p>
+        <i-tabler name="{{ iconName }}" class="my-card-icon" [class]="iconClass"></i-tabler>
+        <p class="my-card-pill" [class]="pillClass">{{pillText}}</p>
       </div>
     </div>
   </div>
