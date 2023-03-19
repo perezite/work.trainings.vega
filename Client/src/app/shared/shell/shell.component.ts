@@ -17,14 +17,19 @@ export class ShellComponent {
     this.sidebarExpanded = !this.sidebarExpanded;
   }
 
+  closeMobileSidebar() {
+    if (this.isMobile())
+      this.sidebarExpanded = false;
+  }
+
   // closeMobileSidebar() {
   //   if (this.isMobile()) {
   //     this.sidebarExpanded = false;
   //   }
   // }
 
-  // private isMobile() : boolean {
-  //   const isMobile = window.matchMedia("screen and (max-width: 576px)").matches;
-  //   return isMobile;
-  // }
+  private isMobile() : boolean {
+    const isMobile = window.matchMedia("screen and (max-width: 576px)").matches;
+    return isMobile;
+  }
 }

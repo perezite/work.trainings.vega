@@ -11,8 +11,8 @@
   <app-sidebar [(expanded)]="sidebarExpanded"></app-sidebar>
   <div class="shell-right">
     <div class="navbar"></div>
-    <div class="content">
-      <button (click)="toggleSidebar()">toggle sidebar</button>
+    <button (click)="toggleSidebar()">toggle sidebar</button>
+    <div class="content" (click)="closeMobileSidebar()">
       <ng-content></ng-content>
     </div>
   </div>
