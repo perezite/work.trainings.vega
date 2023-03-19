@@ -7,13 +7,16 @@ import { ShellService } from './shell.service';
   templateUrl: './shell.component.html',
   styleUrls: ['./shell.component.scss']
 })
-export class ShellComponent implements OnInit {
+export class ShellComponent {
   constructor(public shellService: ShellService) {
   }
 
-  ngOnInit(): void {
-  }
+  // navbarToggled(bla: any) {
 
-  ngOnDestroy() {
-  }
+  // }
+
+  // addItem(newItem: string) {
+  //   const test = newItem;
+  //   // this.items.push(newItem);
+  // }
 }

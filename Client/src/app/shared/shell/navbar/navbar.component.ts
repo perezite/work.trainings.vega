@@ -7,12 +7,20 @@ import { ShellService } from '../shell.service';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+private isToggled = false;
+
+  @Output() toggleClick = new EventEmitter<boolean>();
+  @Output() newItemEvent = new EventEmitter<string>();
+
   constructor(private shellService: ShellService) { }
 
   ngOnInit(): void {
   }
 
-  toggleSidebar() {
-    this.shellService.toggleSidebar();
+  toggle() {
+    this.newItemEvent.emit('test');
+    // this.isToggled = !this.isToggled;
+    //this.toggleClick.emit(this.isToggled);
+    // this.shellService.toggleSidebar();
   }
 }
