@@ -1,17 +1,7 @@
-<!-- <app-sidebar [(expanded)]="sidebarExpanded" class="sidebar"></app-sidebar>
-<div [ngClass]="{'shell-right-expanded': sidebarExpanded}" class="shell-right">
-  <app-navbar (toggleClick)="expandSidebar()" [ngClass]="{'navbar-expanded': sidebarExpanded}" class="navbar"></app-navbar>
-    <div (click)="closeMobileSidebar()" class="content">
-      <ng-content></ng-content>
-    </div>
-</div> -->
-
 <div class="shell">
-  <!-- <div class="sidebar"></div> -->
   <app-sidebar [(expanded)]="sidebarExpanded"></app-sidebar>
   <div class="shell-right">
-    <div class="navbar"></div>
-    <button (click)="toggleSidebar()">toggle sidebar</button>
+    <app-navbar (toggleClick)="toggleSidebar()"></app-navbar>
     <div class="content" (click)="closeMobileSidebar()">
       <ng-content></ng-content>
     </div>

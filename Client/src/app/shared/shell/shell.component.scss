@@ -1,45 +1,8 @@
-// .sidebar {
-//   position: fixed;
-//   z-index: 999;
-// }
-
-// .navbar {
-//   position: fixed;
-//   width: calc(100% - 4rem);
-// }
-
-// .navbar-expanded {
-//   width: calc(100% - var(--sidebar-width-expanded));
-// }
-
-// .shell-right {
-//   display: flex;
-//   flex-direction: column;
-//   width: 100%;
-//   height: 100%;
-//   margin-top: 5rem;
-//   padding-left: var(--sidebar-width);
-// }
-
-// .shell-right-expanded {
-//   padding-left: var(--sidebar-width-expanded);
-// }
-
 .shell {
   display: flex;
   flex-direction: row;
   width: 100%;
-  // height: 100vh;
   height: 100%;
-}
-
-.sidebar {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  width: 4rem;
-  height: 100vh;
-  background-color: red;
 }
 
 app-sidebar {
@@ -47,6 +10,11 @@ app-sidebar {
   top: 0;
   z-index: 999;
   height: 100vh;
+}
+
+app-navbar {
+  position: sticky;
+  top: 0;
 }
 
 .shell-right {

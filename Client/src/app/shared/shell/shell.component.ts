@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class ShellComponent {
   sidebarExpanded = false;
 
-  // ngOnInit(): void {
-  //   if(!this.isMobile())
-  //     this.sidebarExpanded = true;
-  // }
+  ngOnInit(): void {
+    if(!this.isMobile())
+      this.sidebarExpanded = true;
+  }
 
   toggleSidebar() {
     this.sidebarExpanded = !this.sidebarExpanded;
@@ -21,12 +21,6 @@ export class ShellComponent {
     if (this.isMobile())
       this.sidebarExpanded = false;
   }
-
-  // closeMobileSidebar() {
-  //   if (this.isMobile()) {
-  //     this.sidebarExpanded = false;
-  //   }
-  // }
 
   private isMobile() : boolean {
     const isMobile = window.matchMedia("screen and (max-width: 576px)").matches;
