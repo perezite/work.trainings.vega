@@ -1,0 +1,40 @@
+.card {
+  height: 120px;
+  min-height: 120px;
+}
+
+.my-card {
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  border-radius: 0.2rem;
+}
+
+.my-card-body {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 20px;
+  padding-block: 20px;
+}
+
+.my-card-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.my-card-title {
+  margin: 6;
+}
+
+.my-card-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.my-card-pill {
+  margin: 0;
+  margin-left: auto;
+  margin-right: 10px;
+  border-radius: 10em;
+  padding-inline: 10px;
+  padding-block: 3px;
+}

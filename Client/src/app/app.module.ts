@@ -14,6 +14,8 @@ import { IconsModule } from './shared/icons/icons.module';
 import { SidebarDemoComponent } from './shared/shell/sidebar/demo/sidebar-demo.component';
 import { AppComponent } from './app.component';
 import { ShellComponent } from './shared/shell/shell.component';
+import { CardComponent } from './shared/card/card.component';
+import { CardDemoComponent } from './shared/card/card-demo/card-demo.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ShellComponent } from './shared/shell/shell.component';
     NavbarDemoComponent,
     SidebarComponent,
     SidebarDemoComponent,
-    ShellComponent
+    ShellComponent,
+    CardComponent,
+    CardDemoComponent
   ],
   imports: [
     BrowserModule,
