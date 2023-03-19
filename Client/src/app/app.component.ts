@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
     this.router.events.subscribe((event: NavigationEvent) => {
       if (event instanceof ActivationEnd) {
         const fullscreen = (event as ActivationEnd).snapshot.data['fullscreen'];
-        this.fullscreen = JSON.parse(fullscreen) ?? false;
+        this.fullscreen = fullscreen ? JSON.parse(fullscreen) : false;
       }
     });
   }
