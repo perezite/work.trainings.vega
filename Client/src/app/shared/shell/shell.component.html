@@ -1,4 +1,4 @@
-<app-sidebar class="sidebar"></app-sidebar>
+<app-sidebar class="sidebar" [(expanded)]="sidebarExpanded"></app-sidebar>
 <div class="page-right">
   <app-navbar (toggleClick)="expandSidebar($event)"></app-navbar>
   <div class="content">

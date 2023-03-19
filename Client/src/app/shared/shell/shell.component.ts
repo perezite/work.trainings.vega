@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./shell.component.scss']
 })
 export class ShellComponent {
+  sidebarExpanded = false;
+
   expandSidebar(expand: boolean) {
+    this.sidebarExpanded = !this.sidebarExpanded;
   }
 }
