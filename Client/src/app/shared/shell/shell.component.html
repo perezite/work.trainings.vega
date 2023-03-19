@@ -1,8 +1,7 @@
 <app-sidebar class="sidebar"></app-sidebar>
 <div class="page-right">
-  <app-navbar></app-navbar>
+  <app-navbar (toggleClick)="expandSidebar($event)"></app-navbar>
   <div class="content">
-    {{ shellService.isSidebarExpanded }}
     <ng-content></ng-content>
   </div>
 </div>

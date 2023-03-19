@@ -1,5 +1,4 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { ShellService } from '../shell.service';
 
 @Component({
   selector: 'app-navbar',
@@ -12,15 +11,13 @@ private isToggled = false;
   @Output() toggleClick = new EventEmitter<boolean>();
   @Output() newItemEvent = new EventEmitter<string>();
 
-  constructor(private shellService: ShellService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
 
   toggle() {
-    this.newItemEvent.emit('test');
-    // this.isToggled = !this.isToggled;
-    //this.toggleClick.emit(this.isToggled);
-    // this.shellService.toggleSidebar();
+    this.isToggled = !this.isToggled;
+    this.toggleClick.emit(this.isToggled);
   }
 }

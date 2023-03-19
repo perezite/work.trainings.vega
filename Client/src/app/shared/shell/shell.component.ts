@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Observable, Observer, Subject } from 'rxjs';
-import { ShellService } from './shell.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-shell',
@@ -8,15 +6,6 @@ import { ShellService } from './shell.service';
   styleUrls: ['./shell.component.scss']
 })
 export class ShellComponent {
-  constructor(public shellService: ShellService) {
+  expandSidebar(expand: boolean) {
   }
-
-  // navbarToggled(bla: any) {
-
-  // }
-
-  // addItem(newItem: string) {
-  //   const test = newItem;
-  //   // this.items.push(newItem);
-  // }
 }
