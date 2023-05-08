@@ -7,7 +7,8 @@ import { MakeService } from '../services/make.service';
   styleUrls: ['./vehicle-form.component.scss']
 })
 export class VehicleFormComponent implements OnInit {
-  makes: any;
+  makes: any[];
+  models: any[];
   vehicle: any = {};
 
   constructor(private makeService: MakeService) {}
@@ -21,5 +22,8 @@ export class VehicleFormComponent implements OnInit {
 
   onMakeChange() {
     console.log("VEHICLE", this.vehicle);
+    const selectedMake = this.makes.find(m => m.id == this.vehicle.make);
+    this.models = selectedMake ? selectedMake.models : [];
+    console.log(this.models);
   }
 }
