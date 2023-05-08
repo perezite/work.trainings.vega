@@ -5,13 +5,15 @@ import { SandboxComponent } from './sandbox/sandbox.component';
 import { SidebarDemoComponent } from './shared/shell/sidebar/demo/sidebar-demo.component';
 import { VehicleFormComponent } from './vehicles/vehicle-form.component';
 import { CardDemoComponent } from './shared/card/card-demo/card-demo.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: 'navbar-demo', component: NavbarDemoComponent, data: { fullscreen: 'true' } },
   { path: 'sidebar-demo', component: SidebarDemoComponent, data: { fullscreen: 'true' } },
   { path: 'card-demo', component: CardDemoComponent, data: { fullscreen: 'true' } },
-  { path: 'new-vehicle', component: VehicleFormComponent, data: { fullscreen: 'false' } },
-  { path: '**', component: SandboxComponent }
+  { path: 'new-vehicle', component: VehicleFormComponent },
+  { path: 'sandbox', component: SandboxComponent },
+  { path: '**', component: DashboardComponent }
 ];
 
 @NgModule({

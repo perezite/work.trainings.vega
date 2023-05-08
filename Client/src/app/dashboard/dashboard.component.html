@@ -1,0 +1,88 @@
+<div class="dashboard">
+  <section>
+    <div class="row">
+      <app-card title="Total Sales" pillText="+10%" iconName="report-analytics" iconClass="green" pillClass="green backg bg-light-green" class="col-md-3 col-sm-6 mb-3"></app-card>
+      <app-card title="Total Views" pillText="-7%" iconName="flame" iconClass="purple" pillClass="red bg-light-red" class="col-md-3 col-sm-6 mb-3"></app-card>
+      <app-card title="Unique Visitors" pillText="~10%" iconName="device-desktop-analytics" iconClass="blue" pillClass="pink bg-light-pink" class="col-md-3 col-sm-6 mb-3"></app-card>
+      <app-card title="Bounce Rate" pillText="33%" iconName="square-x" iconClass="red" pillClass="blue bg-light-blue" class="col-md-3 col-sm-6 mb-3"></app-card>
+    </div>
+  </section>
+
+  <section class="mt-3">
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Status</th>
+            <th scope="col">Date</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Item #1</td>
+            <td>
+              <span class="badge rounded-pill text-bg-warning">Not available</span>
+            </td>
+            <td>Nov 18</td>
+            <td class="green">$12</td>
+          </tr>
+          <tr>
+            <td>Item #2</td>
+            <td>
+              <span class="badge rounded-pill text-bg-info">New</span>
+            </td>
+            <td>Nov 19</td>
+            <td class="blue">$34</td>
+          </tr>
+          <tr>
+            <td>Item #3</td>
+            <td>
+              <span class="badge rounded-pill text-bg-danger">New</span>
+            </td>
+            <td>Nov 22</td>
+            <td class="red">$78</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="mt-3">
+    <h4>New Car</h4>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword4">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select">
+          <option selected>Choose...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </div>
+    </form>
+  </section>
+
+</div>

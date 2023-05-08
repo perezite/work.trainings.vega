@@ -16,6 +16,7 @@ import { AppComponent } from './app.component';
 import { ShellComponent } from './shared/shell/shell.component';
 import { CardComponent } from './shared/card/card.component';
 import { CardDemoComponent } from './shared/card/card-demo/card-demo.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CardDemoComponent } from './shared/card/card-demo/card-demo.component';
     SidebarDemoComponent,
     ShellComponent,
     CardComponent,
-    CardDemoComponent
+    CardDemoComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
