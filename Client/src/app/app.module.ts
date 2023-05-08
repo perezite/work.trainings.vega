@@ -16,11 +16,11 @@ import { CardComponent } from './shared/card/card.component';
 import { CardDemoComponent } from './shared/card/card-demo/card-demo.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { VehicleFormComponent } from './vehicle-form/vehicle-form.component';
+import { MakeService } from './services/make.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    // VehicleFormComponent,
     NavbarComponent,
     SandboxComponent,
     NavbarDemoComponent,
@@ -39,9 +39,9 @@ import { VehicleFormComponent } from './vehicle-form/vehicle-form.component';
     FormsModule,
     IconsModule
   ],
-  // providers: [
-  //   MakeService
-  // ],
+  providers: [
+    MakeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
