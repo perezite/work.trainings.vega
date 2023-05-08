@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: var(--navbar-height);
+  background-color: white;
+  z-index: 999;
+  border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+.navbar-left {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 1rem;
+}
+
+.navbar-right {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0;
+  margin-right: 1rem;
+  margin-left: auto;
+}
+
+.navbar-toggle {
+  cursor: pointer;
+  padding-top: .1rem;
+  text-decoration: none;
+}
+
+.navbar-toggle-link {
+  font-size: 23px;
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  font-size: .9rem;
+}

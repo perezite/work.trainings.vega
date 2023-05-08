@@ -1,0 +1,8 @@
+<div *ngIf="!fullscreen">
+  <app-shell>
+    <router-outlet></router-outlet>
+  </app-shell>
+</div>
+<div *ngIf="fullscreen">
+  <router-outlet></router-outlet>
+</div>

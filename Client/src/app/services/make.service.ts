@@ -11,8 +11,5 @@ export class MakeService {
 
   getMakes() {
     return this.http.get<any[]>('http://localhost:5170/api/makes');
-    // return this.http.get('/api/makes')
-    //   .pipe(res => res.json());
-    // TODO
   }
 }

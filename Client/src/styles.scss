@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+// @import url('https://fonts.googleapis.com/css?family=Muli:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap');
+
+:root {
+  font-size: .87em;
+  --bs-body-font-family: 'Poppins', sans-serif;
+  --bs-body-font-weight: 400;
+  --navbar-height: 4rem;
+  --sidebar-width: 4rem;
+  --sidebar-width-expanded: 16rem;
+}
+
+.green {
+  color: #00b341;
+}
+
+.purple {
+  color: #6f32be;
+}
+
+.red {
+  color: #ff2825;
+}
+
+.blue {
+  color: #00abfb;
+}
+
+.pink {
+  color: #a905b6;
+}
+
+.orange {
+  color: #ff9300;
+}
+
+.bg-light-green {
+  background-color: #00b34225;
+}
+
+.bg-light-red {
+  background-color: #ff292522;
+}
+
+.bg-light-blue {
+  background-color: #00abfb24;
+}
+
+.bg-light-pink {
+  background-color: #aa05b61f;
+}

@@ -1,0 +1,30 @@
+
+<div class="sidebar" [ngClass]="{'expanded': expanded}">
+  <div class="sidebar-brand-container">
+    <div class="sidebar-brand">
+      <div class="sidebar-logo-container">
+        <img class="sidebar-logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/768px-Bootstrap_logo.svg.png"
+        alt="Logo">
+      </div>
+      <span class="sidebar-brand-text">Vega</span>
+      <div class="sidebar-closer" (click)="shrink()">
+        <i-tabler name="circle-arrow-left" class="sidebar-closer-icon"></i-tabler>
+      </div>
+    </div>
+  </div>
+  <ul class="sidebar-menu">
+    <li class="sidebar-item" [routerLink]="['/dashboard']">
+      <span class="sidebar-icon-container blue">
+        <i-tabler name="dashboard" class="sidebar-icon"></i-tabler>
+      </span>
+      <span>Dashboard</span>
+    </li>
+    <li class="sidebar-item" [routerLink]="['/vehicles/new']" >
+        <span class="sidebar-icon-container orange">
+          <i-tabler name="car" class="sidebar-icon"></i-tabler>
+        </span>
+        <span>Cars</span>
+    </li>
+  </ul>
+</div>

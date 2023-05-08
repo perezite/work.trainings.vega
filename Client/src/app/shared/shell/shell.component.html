@@ -1,0 +1,9 @@
+<div class="shell">
+  <app-sidebar [(expanded)]="sidebarExpanded"></app-sidebar>
+  <div class="shell-right">
+    <app-navbar (toggleClick)="toggleSidebar()"></app-navbar>
+    <div class="content" (click)="closeMobileSidebar()">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>
